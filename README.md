@@ -7,8 +7,8 @@ npm install --save express
 
 heroku -v
 heroku login (pcsmomo@gmail.com)
-heroku apps:create jethropatronsworking
-git remote add heroku https://git.heroku.com/jethropatronsworking.git
+heroku apps:create jethromenu
+git remote add heroku https://git.heroku.com/jethromenu.git
 -> fatal: remote heroku already exists.
 git push heroku master
 
