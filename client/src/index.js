@@ -6,6 +6,7 @@ import { createStore, applyMiddleware } from "redux";
 import "./style/index.css";
 
 import App from "./components/App";
+import reducers from "./reducers";
 
 const store = createStore(() => [], {}, applyMiddleware());
 
