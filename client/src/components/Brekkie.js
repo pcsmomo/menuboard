@@ -10,10 +10,10 @@ class Brekkie extends Component {
     // return this.props.brekkie.map(elm => {
     //   return <div key={elm.name}>{elm.price}</div>;
     // });
-    return Array.prototype.map.call(this.props.brekkie, brekkie => {
+    return Array.prototype.map.call(this.props.brekkie, elm => {
       return (
-        <div key={brekkie.name}>
-          {brekkie.name} - {brekkie.desc} {brekkie.price}
+        <div key={elm.name}>
+          {elm.name} - {elm.desc} {elm.price}
         </div>
       );
     });
@@ -24,8 +24,8 @@ class Brekkie extends Component {
   }
 }
 
-const mapStateToProps = ({ brekkie }) => {
-  return { brekkie };
+const mapStateToProps = state => {
+  return { brekkie: state.food };
 };
 
 const mapDispatchToProps = {
