@@ -1,8 +1,8 @@
-import { FETCH_BREKKIE } from "../actions/types";
+import { FETCH_DISHES } from "../actions/types";
 
 export default function(state = {}, action) {
   switch (action.type) {
-    case FETCH_BREKKIE:
+    case FETCH_DISHES:
       return action.payload;
     default:
       return state;

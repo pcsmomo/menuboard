@@ -1,11 +1,11 @@
 import axios from "axios";
-import { FETCH_BREKKIE } from "./types";
+import { FETCH_DISHES } from "./types";
 
-export const fetchBrekkie = () => async dispatch => {
-  const res = await axios.get("/data/brekkie.json");
+export const fetchDishes = () => async dispatch => {
+  const res = await axios.get("/data/dishes.json");
 
   dispatch({
-    type: FETCH_BREKKIE,
+    type: FETCH_DISHES,
     payload: res.data
   });
 };

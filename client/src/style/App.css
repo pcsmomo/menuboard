@@ -1,7 +1,6 @@
 .content {
   padding: 30px;
 }
-
 .dish {
   display: grid;
   grid-template-columns: 90% 10%;
