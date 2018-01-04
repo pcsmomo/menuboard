@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import menuReducer from "./menuReducer";
+import brekkieReducer from "./brekkieReducer";
 
 export default combineReducers({
-  menu: menuReducer
+  brekkie: brekkieReducer
 });
