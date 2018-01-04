@@ -1,14 +1,109 @@
 [
-  {"name":"Toast", "desc":"sourdough, pumpkin grain, or gluten free with preserves", "price":7},
-{"name":"Woodfrog fruit loaf and date butter", "price":8},
-{"name":"Free range eggs", "desc":"your way, on toast (add sides)", "price":10},
-{"name":"Mixed grain porridge", "desc":"with plums and a white chocolate and almond crumble", "price":12},
-{"name":"Bircher muesli", "desc":"soaked with coconut & almond, turmeric, cinnamon & ginger, coconut yoghurt topped with seasonal fresh & dehydrated fruits", "type":"gf, v, df", "price":15},
-{"name":"Coconut and almond milk chia pudding", "desc":"with elderflower jelly, mango puree, vanilla bean cashew cream, nut granola", "type":"gf, v, df", "price":16},
-{"name":"Chilli scrambled eggs", "desc":"with finely diced crispy bacon, fresh chilli, parmesan, coriander and a chilli oil finish", "price":17},
-{"name":"Waffles", "desc":"in burnt maple cream, roasted pear, honeyjoy crumble with cereal milk pannacotta", "price":18},
-{"name":"Purple kale", "desc":"tossed with pearl barley, roasted pumpkin and cauliflower on hazelnut hommus toast, with almonds, sunflower seeds and poached eggs", "price":18},
-{"name":"Warm Green breakfast bowl", "desc":"with silverbeet, bok choy, zucchini noodles, green beans served with a poached egg, fresh red chilli, millet & a sesame lemon dressing", "type":"gf, df", "price":19},
-{"name":"Smoked trout", "desc":"with crispy capers, fried eggs, kumera potato, cornichons, sweet pea pesto and crème fraiche", "type":"gf", "price":21},
-{"name":"Louisiana plate", "desc":"bacon steak with poached eggs and corn remoulade on toast, pumpkin seed and lime guacamole, chilli prawns and a jalapeno popper", "price":22}
+  {
+    "name": "Toast",
+    "desc": "sourdough, pumpkin grain, or gluten free with preserves",
+    "price": 7
+  },
+  {
+    "name": "Woodfrog fruit loaf",
+    "desc": "and date butter",
+    "price": 8
+  },
+  {
+    "name": "Free range eggs",
+    "desc": "your way, on toast (add sides)",
+    "price": 10
+  },
+  {
+    "name": "Mixed grain porridge",
+    "desc": "with plums and a white chocolate and almond crumble",
+    "price": 12
+  },
+  {
+    "name": "Bircher muesli",
+    "desc":
+      "soaked with coconut & almond, turmeric, cinnamon & ginger, coconut yoghurt topped with seasonal fresh & dehydrated fruits",
+    "type": "gf, v, df",
+    "price": 15
+  },
+  {
+    "name": "Coconut and almond milk chia pudding",
+    "desc":
+      "with elderflower jelly, mango puree, vanilla bean cashew cream, nut granola",
+    "type": "gf, v, df",
+    "price": 16
+  },
+  {
+    "name": "Chilli scrambled eggs",
+    "desc":
+      "with finely diced crispy bacon, fresh chilli, parmesan, coriander and a chilli oil finish",
+    "price": 17
+  },
+  {
+    "name": "Waffles",
+    "desc":
+      "in burnt maple cream, roasted pear, honeyjoy crumble with cereal milk pannacotta",
+    "price": 18
+  },
+  {
+    "name": "Purple kale",
+    "desc":
+      "tossed with pearl barley, roasted pumpkin and cauliflower on hazelnut hommus toast, with almonds, sunflower seeds and poached eggs",
+    "price": 18
+  },
+  {
+    "name": "Warm Green breakfast bowl",
+    "desc":
+      "with silverbeet, bok choy, zucchini noodles, green beans served with a poached egg, fresh red chilli, millet & a sesame lemon dressing",
+    "type": "gf, df",
+    "price": 19
+  },
+  {
+    "name": "Smoked trout",
+    "desc":
+      "with crispy capers, fried eggs, kumera potato, cornichons, sweet pea pesto and crème fraiche",
+    "type": "gf",
+    "price": 21
+  },
+  {
+    "name": "Louisiana plate",
+    "desc":
+      "bacon steak with poached eggs and corn remoulade on toast, pumpkin seed and lime guacamole, chilli prawns and a jalapeno popper",
+    "price": 22
+  },
+  {
+    "name": "French toastie",
+    "desc": "ham, gruyere, ricotta and wholegrain mustard",
+    "price": 13
+  },
+  {
+    "name": "Rainbow vege bowl",
+    "desc":
+      "Pickled red cabbage, avocado, kale, julienne carrots, edamame beans, hazelnut hummus & fresh chilli on cauliflower rice with a poached egg",
+    "type": "gf, df",
+    "price": 18,
+    "side_1": { "name": "+ Chicken", "price": 5 },
+    "side_2": { "name": "+ Trout", "price": 6 }
+  },
+  {
+    "name": "Super green salad",
+    "desc":
+      "of baby kale, peas, quinoa, nuts and seeds, avocado, broccoli, asparagus, edamame and mung beans, freekeh and cottage cheese",
+    "price": 19,
+    "side_1": { "name": "+ grilled chicken", "price": 5 }
+  },
+  {
+    "name": "Old Bay fried chicken burger",
+    "desc":
+      "on black brioche, corn and chilli mayonnaise, herbed salad – with tater tots",
+    "price": 18
+  },
+  {
+    "name": "Roast cricket noodle salad",
+    "desc":
+      "Oven dried crickets, glass noodles, wombok, cucumber, crushed peanuts & tomatoes with Vietnamese mint and a lemongrass & lime dressing",
+    "type": "gf, df",
+    "price": 19
+  },
+  { "name": "Soup du jour", "price": 11 }
 ]
