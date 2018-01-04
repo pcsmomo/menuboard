@@ -1,3 +1,28 @@
 .content {
   padding: 30px;
 }
+
+.dish {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  /*grid-column-gap: 1em;*/
+  /*align-items: end;*/
+  max-width: 400px;
+  padding: 10px 5px;
+  font-size: 1.2em;
+}
+.divName {
+}
+.dishName {
+  font-weight: bold;
+}
+.dishType {
+  font-size: 0.8em;
+  color: green;
+}
+.divPrice {
+  align-self: end;
+  text-align: right;
+}
+.dishPrice {
+}

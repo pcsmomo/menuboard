@@ -12,8 +12,15 @@ class Brekkie extends Component {
     // });
     return Array.prototype.map.call(this.props.brekkie, elm => {
       return (
-        <div key={elm.name}>
-          {elm.name} - {elm.desc} {elm.price}
+        <div className="dish" key={elm.name}>
+          <div className="divName">
+            <span className="dishName">{elm.name}</span>
+            {elm.desc ? " - " : ""} <span className="dishDesc">{elm.desc}</span>
+            <span className="dishType"> {elm.type}</span>
+          </div>
+          <div className="divPrice">
+            <span className="dishPrice">{elm.price}</span>
+          </div>
         </div>
       );
     });
