@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Dishes from "./Dishes";
 import Kids from "./Kids";
-import Side from "./Side";
+import Sides from "./Sides";
 
 class Food extends Component {
   renderFood() {
@@ -12,7 +12,7 @@ class Food extends Component {
           <Dishes />
           <Kids />
         </div>
-        <Side />
+        <Sides />
       </div>
     );
   }

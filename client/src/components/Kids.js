@@ -6,6 +6,7 @@ class Kids extends Component {
   componentDidMount() {
     this.props.fetchKids();
   }
+
   renderMenu() {
     return Array.prototype.map.call(this.props.kids, dish => {
       return (
