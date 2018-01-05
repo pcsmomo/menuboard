@@ -80,7 +80,7 @@ header {
 }
 .sides {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 90% 10%;
   padding: 2px 5px;
 }
 .sidePrice {
