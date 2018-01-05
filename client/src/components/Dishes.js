@@ -34,8 +34,8 @@ class Dishes extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return { dishes: state.food };
+const mapStateToProps = ({ dishes }) => {
+  return { dishes };
 };
 
 const mapDispatchToProps = {
