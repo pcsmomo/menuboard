@@ -1,16 +1,32 @@
 .content {
   padding: 30px;
 }
+
+.title {
+  margin-bottom: 30px;
+}
+.mainTitle {
+  font: 3em bold black;
+}
+.subTitle {
+  font: 2em lighter black;
+}
+.logo {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 80px;
+}
+
 .main {
   column-count: 2;
 }
-
 .dish {
   display: grid;
   grid-template-columns: 90% 10%;
   /*grid-column-gap: 1em;*/
   /*align-items: end;*/
-  max-width: 400px;
+  max-width: 350px;
   padding: 8px 5px;
   font-size: 1.2em;
 }
@@ -29,16 +45,16 @@
 
 .divTriangle {
   display: block;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 .triangle {
   float: left;
   width: 0px;
   height: 0px;
-  margin: 2px;
   border-width: 0px 0px 20px 20px;
   border-style: solid;
   border-color: transparent transparent darkseagreen;
+  margin: 2px;
 }
 .triangle.pink {
   border-color: transparent transparent pink;
@@ -46,7 +62,7 @@
 .newLine {
   clear: both;
 }
-.kidsTitle {
+.thirdTitle {
   font-size: 1.5em;
   font-weight: bold;
   padding-top: 20px;
