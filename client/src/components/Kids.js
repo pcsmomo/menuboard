@@ -25,7 +25,22 @@ class Kids extends Component {
   }
 
   render() {
-    return <div className="dishes">{this.renderMenu()}</div>;
+    return (
+      <div>
+        <div className="divTriangle">
+          <div className="triangle pink" />
+          <div className="triangle" />
+          <div className="triangle pink" />
+          <div className="triangle" />
+          <div className="triangle newLine" />
+          <div className="triangle pink" />
+          <div className="triangle" />
+          <div className="triangle pink" />
+        </div>
+        <div className="kidsTitle">Kids</div>
+        <div className="dishes">{this.renderMenu()}</div>
+      </div>
+    );
   }
 }
 

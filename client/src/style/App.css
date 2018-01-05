@@ -4,27 +4,52 @@
 .main {
   column-count: 2;
 }
+
 .dish {
   display: grid;
   grid-template-columns: 90% 10%;
   /*grid-column-gap: 1em;*/
   /*align-items: end;*/
   max-width: 400px;
-  padding: 10px 5px;
+  padding: 8px 5px;
   font-size: 1.2em;
-}
-.divName {
 }
 .dishName {
   font-weight: bold;
 }
 .dishType {
   font-size: 0.8em;
-  color: green;
+  font-weight: bold;
+  color: darkseagreen;
 }
 .divPrice {
   align-self: end;
   text-align: right;
 }
-.dishPrice {
+
+.divTriangle {
+  display: block;
+  margin-top: 200px;
+}
+.triangle {
+  float: left;
+  width: 0px;
+  height: 0px;
+  margin: 2px;
+  border-width: 0px 0px 20px 20px;
+  border-style: solid;
+  border-color: transparent transparent darkseagreen;
+}
+.triangle.pink {
+  border-color: transparent transparent pink;
+}
+.newLine {
+  clear: both;
+}
+.kidsTitle {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-left: 4px;
+  clear: both;
 }
