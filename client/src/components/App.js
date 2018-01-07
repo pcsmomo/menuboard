@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import "../style/App.css";
 
-import Header from "./Header";
-import Food from "./Food";
-import Drinks from "./Drinks";
+import Header from "./board/Header";
+import Food from "./board/Food";
+import Drinks from "./board/Drinks";
 
 class App extends Component {
   render() {

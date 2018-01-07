@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { fetchKids } from "../actions";
+import { fetchKids } from "../../actions";
 
 class Kids extends Component {
   componentDidMount() {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { fetchDishes } from "../actions";
+import { fetchDishes } from "../../actions";
 
 class Dishes extends Component {
   componentDidMount() {
