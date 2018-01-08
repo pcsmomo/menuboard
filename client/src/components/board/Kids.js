@@ -45,8 +45,10 @@ class Kids extends Component {
   }
 }
 
-const mapStateToProps = ({ kids }) => {
-  return { kids };
+const mapStateToProps = state => {
+  return {
+    kids: state.menu.kids
+  };
 };
 
 const mapDispatchToProps = {

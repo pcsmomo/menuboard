@@ -7,8 +7,8 @@ class Dishes extends Component {
     this.props.fetchDishes();
   }
   renderMenu() {
-    // return this.props.brekkie.map(elm => {
-    //   return <div key={elm.name}>{elm.price}</div>;
+    // return this.props.dishes.map(dish => {
+    //   return <div key={dishes.name}>{dishes.price}</div>;
     // });
 
     // this.props.brekkie.map is not a function so, used a detour.
@@ -34,8 +34,13 @@ class Dishes extends Component {
   }
 }
 
-const mapStateToProps = ({ dishes }) => {
-  return { dishes };
+// const mapStateToProps = ({ dishes }) => {
+//   return { dishes };
+// }
+const mapStateToProps = state => {
+  return {
+    dishes: state.menu.dishes
+  };
 };
 
 const mapDispatchToProps = {

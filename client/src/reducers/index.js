@@ -1,10 +1,6 @@
 import { combineReducers } from "redux";
-import dishesReducer from "./dishesReducer";
-import kidsReducer from "./kidsReducer";
-import sidesReducer from "./sidesReducer";
+import menuReducer from "./menuReducer";
 
 export default combineReducers({
-  dishes: dishesReducer,
-  kids: kidsReducer,
-  sides: sidesReducer
+  menu: menuReducer
 });

@@ -28,8 +28,10 @@ class Sides extends Component {
   }
 }
 
-const mapStateToProps = ({ sides }) => {
-  return { sides };
+const mapStateToProps = state => {
+  return {
+    sides: state.menu.sides
+  };
 };
 
 const mapDispatchToProps = {
