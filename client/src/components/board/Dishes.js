@@ -6,6 +6,7 @@ class Dishes extends Component {
   componentDidMount() {
     this.props.fetchDishes();
   }
+
   renderMenu() {
     // return this.props.dishes.map(dish => {
     //   return <div key={dishes.name}>{dishes.price}</div>;
@@ -14,7 +15,11 @@ class Dishes extends Component {
     // this.props.brekkie.map is not a function so, used a detour.
     return Array.prototype.map.call(this.props.dishes, dish => {
       return (
-        <div className="dish" key={dish.name}>
+        <div
+          className="dish"
+          key={dish.name}
+          onClick={() => this.props.openSlider(dish.name)}
+        >
           <div className="divName">
             <span className="dishName">{dish.name}</span>
             {dish.desc ? " - " : ""}{" "}
@@ -43,8 +48,22 @@ const mapStateToProps = state => {
   };
 };
 
-const mapDispatchToProps = {
-  fetchDishes
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     fetchDishes: () => {
+//       dispatch(fetchDishes());
+//     },
+//     openSlider: selectedItem => {
+//       dispatch(openSlider(selectedItem));
+//     }
+//   };
+// };
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchDishes: () => {
+      dispatch(fetchDishes());
+    }
+  };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Dishes);

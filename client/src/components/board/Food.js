@@ -1,18 +1,22 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { openSlider, closeSlider } from "../../actions";
 
 import Dishes from "./Dishes";
 import Kids from "./Kids";
 import Sides from "./Sides";
+import Slider from "../popup/Slider";
 
 class Food extends Component {
   renderFood() {
     return (
       <div>
         <div className="main">
-          <Dishes />
+          <Dishes openSlider={this.props.openSlider} />
           <Kids />
         </div>
         <Sides />
+        <Slider />
       </div>
     );
   }
@@ -22,4 +26,12 @@ class Food extends Component {
   }
 }
 
-export default Food;
+const mapDispatchToProps = dispatch => {
+  return {
+    openSlider: selectedItem => {
+      dispatch(openSlider(selectedItem));
+    }
+  };
+};
+
+export default connect(null, mapDispatchToProps)(Food);

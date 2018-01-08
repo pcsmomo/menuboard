@@ -7,7 +7,7 @@ const initialState = {
   sides: {}
 };
 
-export default function(state = initialState, action) {
+export default function menu(state = initialState, action) {
   switch (action.type) {
     case FETCH_DISHES:
       return {
