@@ -13,6 +13,7 @@ class Slider extends Component {
   render() {
     return (
       <div className="slider" style={this.props.toggle ? display : hide}>
+        <button onClick={() => this.props.closeSlider()}>X</button>
         <img
           className="slideImg"
           src={"images/" + this.props.selectedItem.id + ".jpg"}
@@ -26,7 +27,6 @@ class Slider extends Component {
           </p>
           <p>{this.props.selectedItem.price}</p>
         </div>
-        <button onClick={() => this.props.closeSlider()}>X</button>
       </div>
     );
   }
