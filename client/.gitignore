@@ -22,3 +22,6 @@ yarn-error.log*
 
 # temporary file
 *.tmp
+
+# sample files
+/public/images/sample_files

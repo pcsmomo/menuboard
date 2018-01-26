@@ -1,25 +1,35 @@
 [
   {
+    "id": "0001",
+    "order": 1,
     "name": "Toast",
     "desc": "sourdough, pumpkin grain, or gluten free with preserves",
     "price": 7
   },
   {
+    "id": "0002",
+    "order": 2,
     "name": "Woodfrog fruit loaf",
     "desc": "and date butter",
     "price": 8
   },
   {
+    "id": "0003",
+    "order": 3,
     "name": "Free range eggs",
     "desc": "your way, on toast (add sides)",
     "price": 10
   },
   {
+    "id": "0004",
+    "order": 4,
     "name": "Mixed grain porridge",
     "desc": "with plums and a white chocolate and almond crumble",
     "price": 12
   },
   {
+    "id": "0005",
+    "order": 5,
     "name": "Bircher muesli",
     "desc":
       "soaked with coconut & almond, turmeric, cinnamon & ginger, coconut yoghurt topped with seasonal fresh & dehydrated fruits",
@@ -27,6 +37,8 @@
     "price": 15
   },
   {
+    "id": "0006",
+    "order": 6,
     "name": "Coconut and almond milk chia pudding",
     "desc":
       "with elderflower jelly, mango puree, vanilla bean cashew cream, nut granola",
@@ -34,24 +46,32 @@
     "price": 16
   },
   {
+    "id": "0007",
+    "order": 7,
     "name": "Chilli scrambled eggs",
     "desc":
       "with finely diced crispy bacon, fresh chilli, parmesan, coriander and a chilli oil finish",
     "price": 17
   },
   {
+    "id": "0008",
+    "order": 8,
     "name": "Waffles",
     "desc":
       "in burnt maple cream, roasted pear, honeyjoy crumble with cereal milk pannacotta",
     "price": 18
   },
   {
+    "id": "0009",
+    "order": 9,
     "name": "Purple kale",
     "desc":
       "tossed with pearl barley, roasted pumpkin and cauliflower on hazelnut hommus toast, with almonds, sunflower seeds and poached eggs",
     "price": 18
   },
   {
+    "id": "0010",
+    "order": 10,
     "name": "Warm Green breakfast bowl",
     "desc":
       "with silverbeet, bok choy, zucchini noodles, green beans served with a poached egg, fresh red chilli, millet & a sesame lemon dressing",
@@ -59,6 +79,8 @@
     "price": 19
   },
   {
+    "id": "0011",
+    "order": 11,
     "name": "Smoked trout",
     "desc":
       "with crispy capers, fried eggs, kumera potato, cornichons, sweet pea pesto and crème fraiche",
@@ -66,44 +88,58 @@
     "price": 21
   },
   {
+    "id": "0012",
+    "order": 12,
     "name": "Louisiana plate",
     "desc":
       "bacon steak with poached eggs and corn remoulade on toast, pumpkin seed and lime guacamole, chilli prawns and a jalapeno popper",
     "price": 22
   },
   {
+    "id": "0013",
+    "order": 13,
     "name": "French toastie",
     "desc": "ham, gruyere, ricotta and wholegrain mustard",
     "price": 13
   },
   {
+    "id": "0014",
+    "order": 14,
     "name": "Rainbow vege bowl",
     "desc":
       "Pickled red cabbage, avocado, kale, julienne carrots, edamame beans, hazelnut hummus & fresh chilli on cauliflower rice with a poached egg",
     "type": "gf, df",
-    "price": 18,
     "side_1": { "name": "+ Chicken", "price": 5 },
-    "side_2": { "name": "+ Trout", "price": 6 }
+    "side_2": { "name": "+ Trout", "price": 6 },
+    "price": 18
   },
+
   {
+    "id": "0015",
+    "order": 15,
     "name": "Super green salad",
     "desc":
       "of baby kale, peas, quinoa, nuts and seeds, avocado, broccoli, asparagus, edamame and mung beans, freekeh and cottage cheese",
-    "price": 19,
-    "side_1": { "name": "+ grilled chicken", "price": 5 }
+    "side_1": { "name": "+ grilled chicken", "price": 5 },
+    "price": 19
   },
+
   {
+    "id": "0016",
+    "order": 16,
     "name": "Old Bay fried chicken burger",
     "desc":
       "on black brioche, corn and chilli mayonnaise, herbed salad – with tater tots",
     "price": 18
   },
   {
+    "id": "0017",
+    "order": 17,
     "name": "Roast cricket noodle salad",
     "desc":
       "Oven dried crickets, glass noodles, wombok, cucumber, crushed peanuts & tomatoes with Vietnamese mint and a lemongrass & lime dressing",
     "type": "gf, df",
     "price": 19
   },
-  { "name": "Soup du jour", "price": 11 }
+  { "id": "0018", "order": 18, "name": "Soup du jour", "price": 11 }
 ]
