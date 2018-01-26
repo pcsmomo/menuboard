@@ -15,9 +15,17 @@ class Slider extends Component {
       <div className="slider" style={this.props.toggle ? display : hide}>
         <img
           className="slideImg"
-          src={"images/" + this.props.selectedId + ".jpg"}
-          alt={this.props.selectedId}
+          src={"images/" + this.props.selectedItem.id + ".jpg"}
+          alt={this.props.selectedItem.name}
         />
+        <div>
+          <h4>{this.props.selectedItem.name}</h4>
+          <p>
+            {this.props.selectedItem.desc}{" "}
+            <span>{this.props.selectedItem.type}</span>
+          </p>
+          <p>{this.props.selectedItem.price}</p>
+        </div>
         <button onClick={() => this.props.closeSlider()}>X</button>
       </div>
     );
@@ -27,7 +35,7 @@ class Slider extends Component {
 const mapStateToProps = state => {
   return {
     toggle: state.slider.toggle,
-    selectedId: state.slider.selectedId
+    selectedItem: state.slider.selectedItem
   };
 };
 

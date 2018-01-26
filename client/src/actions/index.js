@@ -26,10 +26,10 @@ export const fetchSides = () => async dispatch => {
   });
 };
 
-export const openSlider = selectedId => {
+export const openSlider = selectedItem => {
   return {
     type: OPEN_SLIDER,
-    selectedId
+    selectedItem
   };
 };
 
