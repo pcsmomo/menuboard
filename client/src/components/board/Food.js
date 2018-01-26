@@ -16,7 +16,7 @@ class Food extends Component {
           <Kids />
         </div>
         <Sides />
-        <Slider />
+        <Slider closeSlider={this.props.closeSlider} />
       </div>
     );
   }
@@ -28,8 +28,11 @@ class Food extends Component {
 
 const mapDispatchToProps = dispatch => {
   return {
-    openSlider: selectedItem => {
-      dispatch(openSlider(selectedItem));
+    openSlider: selectedId => {
+      dispatch(openSlider(selectedId));
+    },
+    closeSlider: () => {
+      dispatch(closeSlider());
     }
   };
 };

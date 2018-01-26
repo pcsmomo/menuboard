@@ -18,7 +18,7 @@ class Dishes extends Component {
         <div
           className="dish"
           key={dish.name}
-          onClick={() => this.props.openSlider(dish.name)}
+          onClick={() => this.props.openSlider(dish.id)}
         >
           <div className="divName">
             <span className="dishName">{dish.name}</span>
@@ -53,8 +53,8 @@ const mapStateToProps = state => {
 //     fetchDishes: () => {
 //       dispatch(fetchDishes());
 //     },
-//     openSlider: selectedItem => {
-//       dispatch(openSlider(selectedItem));
+//     openSlider: selectedId => {
+//       dispatch(openSlider(selectedId));
 //     }
 //   };
 // };

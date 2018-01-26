@@ -2,7 +2,7 @@ import { OPEN_SLIDER, CLOSE_SLIDER } from "../actions/types";
 
 const initialState = {
   toggle: false,
-  selectedItem: ""
+  selectedId: ""
 };
 
 export default function popup(state = initialState, action) {
@@ -11,12 +11,13 @@ export default function popup(state = initialState, action) {
       return {
         ...state,
         toggle: true,
-        selectedItem: action.selectedItem
+        selectedId: action.selectedId
       };
     case CLOSE_SLIDER:
       return {
         ...state,
-        toggle: false
+        toggle: false,
+        selectedId: ""
       };
     default:
       return state;
