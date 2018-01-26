@@ -5,7 +5,7 @@ const initialState = {
   selectedId: ""
 };
 
-export default function popup(state = initialState, action) {
+export default function slider(state = initialState, action) {
   switch (action.type) {
     case OPEN_SLIDER:
       return {

@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
 import menuReducer from "./menuReducer";
-import popupReducer from "./popupReducer";
+import sliderReducer from "./sliderReducer";
 
 export default combineReducers({
   menu: menuReducer,
-  popup: popupReducer
+  slider: sliderReducer
 });

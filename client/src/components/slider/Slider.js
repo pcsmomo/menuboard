@@ -26,8 +26,8 @@ class Slider extends Component {
 
 const mapStateToProps = state => {
   return {
-    toggle: state.popup.toggle,
-    selectedId: state.popup.selectedId
+    toggle: state.slider.toggle,
+    selectedId: state.slider.selectedId
   };
 };
 
