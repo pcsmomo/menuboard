@@ -7,18 +7,32 @@ class Dishes extends Component {
     this.props.fetchDishes();
   }
 
+  addPrevNextId(obj, idx) {
+    let dishes = this.props.dishes;
+    let arrLen, prevIdx, nextIdx;
+
+    arrLen = dishes.length;
+    prevIdx = idx <= 0 ? arrLen - 1 : idx - 1;
+    nextIdx = idx >= arrLen - 1 ? 0 : idx + 1;
+
+    obj.prevId = dishes[prevIdx].id;
+    obj.nextId = dishes[nextIdx].id;
+
+    return obj;
+  }
+
   renderMenu() {
     // return this.props.dishes.map(dish => {
     //   return <div key={dishes.name}>{dishes.price}</div>;
     // });
 
     // this.props.brekkie.map is not a function so, used a detour.
-    return Array.prototype.map.call(this.props.dishes, dish => {
+    return Array.prototype.map.call(this.props.dishes, (dish, idx) => {
       return (
         <div
           className="dish"
-          key={dish.name}
-          onClick={() => this.props.openSlider(dish)}
+          key={dish.id}
+          onClick={() => this.props.openSlider(this.addPrevNextId(dish, idx))}
         >
           <div className="divName">
             <span className="dishName">{dish.name}</span>
