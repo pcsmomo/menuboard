@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { openSlider, closeSlider } from "../../actions";
+import { openSlider } from "../../actions";
 
 import Dishes from "./Dishes";
 import Kids from "./Kids";
@@ -16,7 +16,6 @@ class Food extends Component {
           <Kids />
         </div>
         <Sides />
-        <Slider closeSlider={this.props.closeSlider} />
       </div>
     );
   }
@@ -30,9 +29,6 @@ const mapDispatchToProps = dispatch => {
   return {
     openSlider: selectedItem => {
       dispatch(openSlider(selectedItem));
-    },
-    closeSlider: () => {
-      dispatch(closeSlider());
     }
   };
 };

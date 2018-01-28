@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { closeSlider } from "../../actions";
 import "../../style/slider.css";
 
 const display = {
@@ -12,20 +13,23 @@ const hide = {
 class Slider extends Component {
   render() {
     return (
-      <div className="slider" style={this.props.toggle ? display : hide}>
-        <button onClick={() => this.props.closeSlider()}>X</button>
-        <img
-          className="slideImg"
-          src={"images/" + this.props.selectedItem.id + ".jpg"}
-          alt={this.props.selectedItem.name}
-        />
-        <div>
-          <h4>{this.props.selectedItem.name}</h4>
-          <p>
-            {this.props.selectedItem.desc}{" "}
-            <span>{this.props.selectedItem.type}</span>
-          </p>
-          <p>{this.props.selectedItem.price}</p>
+      <div className="sliderArea" style={this.props.toggle ? display : hide}>
+        <div className="slider">
+          <button onClick={() => this.props.closeSlider()}>X</button>
+          <div className="sliderImg">
+            <img
+              src={"images/" + this.props.selectedItem.id + ".jpg"}
+              alt={this.props.selectedItem.name}
+            />
+          </div>
+          <div className="sliderDetail">
+            <h4>{this.props.selectedItem.name}</h4>
+            <p>
+              {this.props.selectedItem.desc}{" "}
+              <span>{this.props.selectedItem.type}</span>
+            </p>
+            <p>{this.props.selectedItem.price}</p>
+          </div>
         </div>
       </div>
     );
@@ -39,4 +43,12 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(Slider);
+const mapDispatchToProps = dispatch => {
+  return {
+    closeSlider: () => {
+      dispatch(closeSlider());
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Slider);
