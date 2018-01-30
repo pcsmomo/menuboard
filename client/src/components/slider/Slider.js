@@ -15,12 +15,17 @@ class Slider extends Component {
     return (
       <div className="sliderArea" style={this.props.toggle ? display : hide}>
         <div className="slider">
-          <button onClick={() => this.props.closeSlider()}>X</button>
           <div className="sliderImg">
             <img
               src={"images/" + this.props.selectedItem.id + ".jpg"}
               alt={this.props.selectedItem.name}
             />
+            <label className="prev">
+              <span />
+            </label>
+            <label className="next">
+              <span />
+            </label>
           </div>
           <div className="sliderDetail">
             <h4>{this.props.selectedItem.name}</h4>
@@ -30,6 +35,7 @@ class Slider extends Component {
             </p>
             <p>{this.props.selectedItem.price}</p>
           </div>
+          <button onClick={() => this.props.closeSlider()}>X</button>
         </div>
       </div>
     );

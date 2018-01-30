@@ -15,7 +15,41 @@
   z-index: -1;
   animation: scroll 0.5s ease-in-out;
 }
-
+.prev,
+.next {
+  width: 9%;
+  height: 100px;
+  position: absolute;
+  top: 300px;
+  background-color: rgba(255, 82, 82, 0.2);
+  z-index: 99;
+  transition: 0.45s;
+  cursor: pointer;
+  text-align: center;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+.prev span,
+.next span {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: solid 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.prev span {
+  border-color: transparent #fff transparent transparent;
+  right: 35%;
+}
+.next span {
+  border-color: transparent transparent transparent #fff;
+  left: 35%;
+}
 @keyframes scroll {
   0% {
     opacity: 0.4;
