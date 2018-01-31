@@ -6,6 +6,7 @@
   height: 100%;
   padding-top: 100px;
   background-color: rgba(175, 223, 207, 0.5);
+  animation: scroll 0.5s ease-in-out;
 }
 .slider {
   margin: 0 5%;
@@ -13,7 +14,6 @@
 .sliderImg {
   text-align: center;
   z-index: -1;
-  animation: scroll 0.5s ease-in-out;
 }
 .prev,
 .next {
@@ -50,6 +50,27 @@
   border-color: transparent transparent transparent #fff;
   left: 35%;
 }
+.sliderDetail {
+  padding-left: 2em;
+}
+.sliderDetail > h4 {
+  font-size: 1.4em;
+}
+.sliderDetail > p {
+  font-size: 1.2em;
+}
+.sliderDetail span {
+  color: darkgreen;
+}
+.btnClose {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 3em;
+  color: gray;
+  background-color: lightgray;
+  text-align: center;
+}
+
 @keyframes scroll {
   0% {
     opacity: 0.4;

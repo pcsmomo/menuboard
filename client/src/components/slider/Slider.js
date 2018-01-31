@@ -35,7 +35,9 @@ class Slider extends Component {
             </p>
             <p>{this.props.selectedItem.price}</p>
           </div>
-          <button onClick={() => this.props.closeSlider()}>X</button>
+          <button className="btnClose" onClick={() => this.props.closeSlider()}>
+            close
+          </button>
         </div>
       </div>
     );
