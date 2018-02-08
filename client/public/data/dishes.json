@@ -3,22 +3,23 @@
     "id": "0001",
     "order": 1,
     "name": "Toast",
-    "desc": "sourdough, pumpkin grain, or gluten free with preserves",
-    "price": 7
+    "desc":
+      "sourdough, pumpkin grain, or gluten free with preserves/house made jams - Add Asides blow",
+    "price": 7.5
   },
   {
     "id": "0002",
     "order": 2,
     "name": "Woodfrog fruit loaf",
-    "desc": "and date butter",
-    "price": 8
+    "desc": "& date butter",
+    "price": 8.5
   },
   {
     "id": "0003",
     "order": 3,
     "name": "Free range eggs",
-    "desc": "your way, on toast (add sides)",
-    "price": 10
+    "desc": "your way, on toast - Add sides below",
+    "price": 11
   },
   {
     "id": "0004",
@@ -30,116 +31,138 @@
   {
     "id": "0005",
     "order": 5,
-    "name": "Bircher muesli",
+    "name": "Berry & Pomegranate Bircher muesli",
     "desc":
-      "soaked with coconut & almond, turmeric, cinnamon & ginger, coconut yoghurt topped with seasonal fresh & dehydrated fruits",
+      "soaked in coconut milk with cinnamon & ginger, coconut yoghurt, seasonal fresh fruits & coconut flakes",
     "type": "gf, v, df",
     "price": 15
   },
   {
     "id": "0006",
     "order": 6,
-    "name": "Coconut and almond milk chia pudding",
+    "name": "Coconut & Almond milk Chia Pudding",
     "desc":
-      "with elderflower jelly, mango puree, vanilla bean cashew cream, nut granola",
-    "type": "gf, v, df",
+      "with elderflower jelly, mango puree, vanilla bean cashew cream topped with a nut granola",
+    "type": "gf, df, vo",
     "price": 16
   },
   {
-    "id": "0007",
+    "id": "0023",
     "order": 7,
+    "name": "Orange Waffle",
+    "desc":
+      "with caramelised candied oranges, mandarin cinnamon panna cotta, honeyjoy crumble & a dark chocolate sauce",
+    "price": 18
+  },
+  {
+    "id": "0007",
+    "order": 8,
     "name": "Chilli scrambled eggs",
     "desc":
-      "with finely diced crispy bacon, fresh chilli, parmesan, coriander and a chilli oil finish",
+      "with finely diced crispy bacon, fresh chilli, parmesan, coriander & a chilli oil finish on a slice of sourdough",
     "price": 17
   },
   {
-    "id": "0008",
-    "order": 8,
-    "name": "Waffles",
-    "desc":
-      "in burnt maple cream, roasted pear, honeyjoy crumble with cereal milk pannacotta",
-    "price": 18
+    "id": "0019",
+    "order": 9,
+    "name": "Burnley Baked Eggs",
+    "desc": "in a chipotle & tomato sugo with mushrooms and sourdough",
+    "price": 17.5,
+    "add": [
+      { "name": "+ Chorizo", "price": 3 },
+      { "name": "+ Feta", "price": 3 }
+    ]
   },
   {
     "id": "0009",
-    "order": 9,
-    "name": "Purple kale",
+    "order": 10,
+    "name": "Purple Kale",
     "desc":
-      "tossed with pearl barley, roasted pumpkin and cauliflower on hazelnut hommus toast, with almonds, sunflower seeds and poached eggs",
+      "tossed with pearl barley, roasted pumpkin & cauliflower on hazelnut hommus toast, with almonds, sunflower seeds & poached eggs",
     "price": 18
   },
   {
-    "id": "0010",
-    "order": 10,
-    "name": "Warm Green breakfast bowl",
-    "desc":
-      "with silverbeet, bok choy, zucchini noodles, green beans served with a poached egg, fresh red chilli, millet & a sesame lemon dressing",
-    "type": "gf, df",
-    "price": 19
-  },
-  {
-    "id": "0011",
+    "id": "0020",
     "order": 11,
-    "name": "Smoked trout",
+    "name": "Sweet Potato Rosti",
     "desc":
-      "with crispy capers, fried eggs, kumera potato, cornichons, sweet pea pesto and crème fraiche",
+      "with crispy bacon, pumpkin seed & lime guacamole, two poached eggs & dukkah crumble",
     "type": "gf",
-    "price": 21
+    "price": 19.5
   },
   {
-    "id": "0012",
+    "id": "0024",
     "order": 12,
-    "name": "Louisiana plate",
+    "name": "Buffalo Tray",
     "desc":
-      "bacon steak with poached eggs and corn remoulade on toast, pumpkin seed and lime guacamole, chilli prawns and a jalapeno popper",
-    "price": 22
+      "Mozzarella wrapped in prosciutto with roasted eggplant sugo, sourdough soldiers, two poached eggs & drizzled with basil oil",
+    "price": 20
   },
   {
-    "id": "0013",
+    "id": "0025",
     "order": 13,
-    "name": "French toastie",
-    "desc": "ham, gruyere, ricotta and wholegrain mustard",
-    "price": 13
+    "name": "Fish Tacos",
+    "desc":
+      "Deep fried Barramundi with guacamole, tomato salsa, sriracha mayonnaise & mandarins",
+    "type": "gfo",
+    "price": 18
+  },
+  {
+    "id": "0021",
+    "order": 14,
+    "name": "Okonomiyaki",
+    "desc":
+      "Japanese savoury pancake with shredded cabbage, kewpie mayonnaise, bbq sauce, pickled ginger & katsuobushi",
+    "price": 17.5,
+    "add": [
+      { "name": "+ Chicken", "price": 5 },
+      { "name": "+ Prawn", "price": 5 },
+      { "name": "+ Pulled Pork", "price": 6 }
+    ]
   },
   {
     "id": "0014",
-    "order": 14,
+    "order": 15,
     "name": "Rainbow vege bowl",
     "desc":
       "Pickled red cabbage, avocado, kale, julienne carrots, edamame beans, hazelnut hummus & fresh chilli on cauliflower rice with a poached egg",
     "type": "gf, df",
-    "side_1": { "name": "+ Chicken", "price": 5 },
-    "side_2": { "name": "+ Trout", "price": 6 },
-    "price": 18
+    "price": 18,
+    "add": [
+      { "name": "+ Chicken", "price": 5 },
+      { "name": "+ Trout", "price": 7 },
+      { "name": "+ Pulled Pork", "price": 6 },
+      { "name": "+ Crickets", "price": 6 }
+    ]
   },
-
   {
-    "id": "0015",
-    "order": 15,
-    "name": "Super green salad",
+    "id": "0022",
+    "order": 16,
+    "name": "Super Salad",
     "desc":
-      "of baby kale, peas, quinoa, nuts and seeds, avocado, broccoli, asparagus, edamame and mung beans, freekeh and cottage cheese",
-    "side_1": { "name": "+ grilled chicken", "price": 5 },
-    "price": 19
+      "sprouted brown rice, goji berries, turmeric picked fennel, fresh & dried tomato, toasted coconut nuts & seeds served on rocket and macadania cream",
+    "type": "gf, v, df",
+    "price": 19,
+    "add": [
+      { "name": "+ Chicken", "price": 5 },
+      { "name": "+ Trout", "price": 7 }
+    ]
   },
-
   {
     "id": "0016",
-    "order": 16,
-    "name": "Old Bay fried chicken burger",
+    "order": 17,
+    "name": "Old Bay Fried Chicken Burger",
     "desc":
-      "on black brioche, corn and chilli mayonnaise, herbed salad – with tater tots",
-    "price": 18
+      "on black brioche bun, corn & chilli mayonnaise, herbed salad with a side of tater tots",
+    "price": 18.5
   },
   {
-    "id": "0017",
-    "order": 17,
-    "name": "Roast cricket noodle salad",
-    "desc":
-      "Oven dried crickets, glass noodles, wombok, cucumber, crushed peanuts & tomatoes with Vietnamese mint and a lemongrass & lime dressing",
-    "type": "gf, df",
-    "price": 19
+    "id": "0026",
+    "order": 18,
+    "name": "BBQ Pulled Pork Burger",
+    "desc": "16 hour slow cooked on a brioche bun, with apple slaw & bbq sauce",
+    "price": 14,
+    "add": [{ "name": "+ Tater tots", "price": 5 }]
   },
-  { "id": "0018", "order": 18, "name": "Soup du jour", "price": 11 }
+  { "id": "0018", "order": 19, "name": "Soup du jour", "price": 11 }
 ]

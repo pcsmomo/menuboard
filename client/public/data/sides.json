@@ -1,14 +1,20 @@
 [
-  { "name": "Extra egg", "price": 3 },
-  { "name": "Feta", "price": 3 },
-  { "name": "Wilted spinach", "price": 3 },
-  { "name": "Capsicum relish", "price": 3 },
-  { "name": "Thyme roasted mushrooms", "price": 4 },
-  { "name": "Black beans topped with feta", "price": 4 },
-  { "name": "Tater tots", "price": 5 },
-  { "name": "Bacon – short cut or crispy", "price": 5 },
-  { "name": "Avocado", "price": 4 },
-  { "name": "Chorizo", "price": 5 },
-  { "name": "Crickets", "price": 6 },
-  { "name": "Tasmanian ocean trout", "price": 7 }
+  { "id": "5001", "order": 1, "name": "Extra egg", "price": 3 },
+  { "id": "5002", "order": 2, "name": "Feta", "price": 3 },
+  { "id": "5003", "order": 3, "name": "Wilted spinach", "price": 3 },
+  { "id": "5004", "order": 4, "name": "Capsicum relish", "price": 3 },
+  { "id": "5005", "order": 5, "name": "Thyme roasted mushrooms", "price": 4 },
+  {
+    "id": "5006",
+    "order": 6,
+    "name": "Black beans topped with feta",
+    "price": 4
+  },
+  { "id": "5009", "order": 7, "name": "Avocado", "price": 4 },
+  { "id": "5007", "order": 8, "name": "Tater tots", "price": 5 },
+  { "id": "5008", "order": 9, "name": "Bacon", "price": 5 },
+  { "id": "5010", "order": 10, "name": "Chorizo", "price": 5 },
+  { "id": "5011", "order": 11, "name": "Crickets", "price": 6 },
+  { "id": "5013", "order": 12, "name": "Fried chicken brick", "price": 7 },
+  { "id": "5012", "order": 13, "name": "Tasmanian ocean trout", "price": 7 }
 ]

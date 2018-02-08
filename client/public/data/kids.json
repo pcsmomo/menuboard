@@ -1,5 +1,10 @@
 [
-  { "name": "Hundreds & thousands fairy bread", "price": 6 },
-  { "name": "Ham & cheese toastie", "price": 8 },
-  { "name": "Scrambled egg on toast", "price": 8 }
+  {
+    "id": "3001",
+    "order": 1,
+    "name": "Hundreds & thousands fairy bread",
+    "price": 6
+  },
+  { "id": "3002", "order": 2, "name": "Ham & cheese toastie", "price": 8 },
+  { "id": "3003", "order": 3, "name": "Scrambled egg on toast", "price": 8 }
 ]
