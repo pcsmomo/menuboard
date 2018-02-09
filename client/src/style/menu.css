@@ -28,12 +28,17 @@ header {
   column-count: 2;
 }
 .dish {
-  display: grid;
-  grid-template-columns: 90% 10%;
+  display: block;
   /*grid-column-gap: 1em;*/
   /*align-items: end;*/
   max-width: 350px;
-  padding: 8px 5px;
+  padding: 14px 5px;
+  clear: both;
+  line-height: 1.3em;
+}
+.divName {
+  width: 90%;
+  float: left;
 }
 .dishName {
   font-weight: bold;
@@ -44,13 +49,16 @@ header {
   color: darkseagreen;
 }
 .divPrice {
-  align-self: end;
+  float: right;
   text-align: right;
+}
+.divAdd {
+  clear: both;
 }
 
 .divTriangle {
   display: block;
-  margin-top: 150px;
+  margin-top: 40px;
 }
 .triangle {
   float: left;

@@ -29,6 +29,18 @@ class Dishes extends Component {
           <div className="divPrice">
             <span className="dishPrice">{dish.price}</span>
           </div>
+          {dish.add ? this.renderAdd(dish.add) : ""}
+        </div>
+      );
+    });
+  }
+
+  renderAdd(addArr) {
+    return addArr.map(add => {
+      return (
+        <div className="divAdd" key={add.name}>
+          <div className="divName">{add.name}</div>
+          <div className="divPrice">{add.price}</div>
         </div>
       );
     });
