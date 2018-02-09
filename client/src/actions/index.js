@@ -1,6 +1,7 @@
 import axios from "axios";
 import { FETCH_DISHES, FETCH_KIDS, FETCH_SIDES } from "./types";
 import { OPEN_SLIDER, CLOSE_SLIDER } from "./types";
+import { FETCH_DISHINFO } from "./types";
 
 export const fetchDishes = () => async dispatch => {
   const res = await axios.get("/data/dishes.json");
@@ -36,5 +37,13 @@ export const openSlider = selectedItem => {
 export const closeSlider = () => {
   return {
     type: CLOSE_SLIDER
+  };
+};
+
+export const fetchDishInfo = (dishId, option) => {
+  return {
+    type: FETCH_DISHINFO,
+    dishId,
+    option
   };
 };

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { closeSlider } from "../../actions";
+import { closeSlider, fetchDishInfo } from "../../actions";
 import "../../style/slider.css";
 
 const display = {
@@ -20,10 +20,20 @@ class Slider extends Component {
               src={"images/" + this.props.selectedItem.id + ".jpg"}
               alt={this.props.selectedItem.name}
             />
-            <label className="prev">
+            <label
+              className="prev"
+              onClick={() =>
+                this.props.fetchDishInfo(this.props.selectedItem.id, "prev")
+              }
+            >
               <span />
             </label>
-            <label className="next">
+            <label
+              className="next"
+              onClick={() =>
+                this.props.fetchDishInfo(this.props.selectedItem.id, "next")
+              }
+            >
               <span />
             </label>
           </div>
@@ -55,6 +65,9 @@ const mapDispatchToProps = dispatch => {
   return {
     closeSlider: () => {
       dispatch(closeSlider());
+    },
+    fetchDishInfo: (dishId, option) => {
+      dispatch(fetchDishInfo(dishId, option));
     }
   };
 };
