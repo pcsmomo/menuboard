@@ -17,13 +17,13 @@ class Slider extends Component {
         <div className="slider">
           <div className="sliderImg">
             <img
-              src={"images/" + this.props.selectedItem.id + ".jpg"}
-              alt={this.props.selectedItem.name}
+              src={"images/" + this.props.curItem.id + ".jpg"}
+              alt={this.props.curItem.name}
             />
             <label
               className="prev"
               onClick={() =>
-                this.props.fetchDishInfo(this.props.selectedItem.id, "prev")
+                this.props.fetchDishInfo(this.props.curItem.id, "prev")
               }
             >
               <span />
@@ -31,19 +31,18 @@ class Slider extends Component {
             <label
               className="next"
               onClick={() =>
-                this.props.fetchDishInfo(this.props.selectedItem.id, "next")
+                this.props.fetchDishInfo(this.props.curItem.id, "next")
               }
             >
               <span />
             </label>
           </div>
           <div className="sliderDetail">
-            <h4>{this.props.selectedItem.name}</h4>
+            <h4>{this.props.curItem.name}</h4>
             <p>
-              {this.props.selectedItem.desc}{" "}
-              <span>{this.props.selectedItem.type}</span>
+              {this.props.curItem.desc} <span>{this.props.curItem.type}</span>
             </p>
-            <p>{this.props.selectedItem.price}</p>
+            <p>{this.props.curItem.price}</p>
           </div>
           <button className="btnClose" onClick={() => this.props.closeSlider()}>
             close
@@ -56,8 +55,8 @@ class Slider extends Component {
 
 const mapStateToProps = state => {
   return {
-    toggle: state.slider.toggle,
-    selectedItem: state.slider.selectedItem
+    toggle: state.menu.toggle,
+    curItem: state.menu.curItem
   };
 };
 

@@ -33,7 +33,7 @@ class App extends Component {
 
 const mapStateToProps = state => {
   return {
-    toggle: state.slider.toggle
+    toggle: state.menu.toggle
   };
 };
 
