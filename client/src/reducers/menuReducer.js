@@ -35,7 +35,6 @@ export default function menu(state = initialState, action) {
         curItem: findPrevNextItem(state, action.dishId, action.option)
       };
     case OPEN_SLIDER:
-      console.log(action.curItem);
       return {
         ...state,
         toggle: true,
@@ -62,8 +61,6 @@ const findPrevNextItem = (state, curId, option) => {
     });
     if (curItem) break;
   }
-  console.log(curItem);
-  console.log(upIdx);
 
   // find prevItem or nextItem
   let nextItem = null;
