@@ -27,8 +27,8 @@ class Food extends Component {
 
 const mapDispatchToProps = dispatch => {
   return {
-    openSlider: curItem => {
-      dispatch(openSlider(curItem));
+    openSlider: (curItem, cateIdx) => {
+      dispatch(openSlider(curItem, cateIdx));
     }
   };
 };

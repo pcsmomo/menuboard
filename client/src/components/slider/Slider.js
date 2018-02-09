@@ -15,6 +15,7 @@ class Slider extends Component {
     return (
       <div className="sliderArea" style={this.props.toggle ? display : hide}>
         <div className="slider">
+          <h2>{this.props.curCateName}</h2>
           <div className="sliderImg">
             <img
               src={"images/" + this.props.curItem.id + ".jpg"}
@@ -56,7 +57,8 @@ class Slider extends Component {
 const mapStateToProps = state => {
   return {
     toggle: state.menu.toggle,
-    curItem: state.menu.curItem
+    curItem: state.menu.curItem,
+    curCateName: state.menu.curCateName
   };
 };
 

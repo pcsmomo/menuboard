@@ -3,13 +3,15 @@ import { FETCH_DISHINFO } from "../actions/types";
 import { OPEN_SLIDER, CLOSE_SLIDER } from "../actions/types";
 
 // If I don't give initialState, there would be an error on Dishes.js
+const cateNames = ["Breakfast & Lunch", "Kids", "Sides"];
 const cate = ["dishes", "kids", "sides"];
 const initialState = {
   dishes: {},
   kids: {},
   sides: {},
   toggle: false,
-  curItem: ""
+  curItem: "",
+  curCateName: ""
 };
 
 export default function menu(state = initialState, action) {
@@ -30,15 +32,18 @@ export default function menu(state = initialState, action) {
         sides: action.payload
       };
     case FETCH_DISHINFO:
+      let result = findPrevNextItem(state, action.dishId, action.option);
       return {
         ...state,
-        curItem: findPrevNextItem(state, action.dishId, action.option)
+        curItem: result.curItem,
+        curCateName: result.curCateName
       };
     case OPEN_SLIDER:
       return {
         ...state,
         toggle: true,
-        curItem: action.curItem
+        curItem: action.curItem,
+        curCateName: cateNames[action.cateIdx]
       };
     case CLOSE_SLIDER:
       return {
@@ -53,10 +58,10 @@ export default function menu(state = initialState, action) {
 
 const findPrevNextItem = (state, curId, option) => {
   let curItem = null;
-  let upIdx = 0; // index for categories(dishes, kids, sides)
+  let cateIdx = 0; // index for categories(dishes, kids, sides)
 
-  for (upIdx = 0; upIdx <= 2; upIdx++) {
-    curItem = state[cate[upIdx]].find(element => {
+  for (cateIdx = 0; cateIdx <= 2; cateIdx++) {
+    curItem = state[cate[cateIdx]].find(element => {
       return element.id == curId;
     });
     if (curItem) break;
@@ -67,21 +72,24 @@ const findPrevNextItem = (state, curId, option) => {
   let curOrder = curItem.order;
   if (option === "prev") {
     if (curOrder <= 0) {
-      if (upIdx <= 0) upIdx = 1;
-      else upIdx--;
-      nextItem = state[cate[upIdx]][state[cate[upIdx]].length - 1];
+      if (cateIdx <= 0) cateIdx = 1;
+      else cateIdx--;
+      nextItem = state[cate[cateIdx]][state[cate[cateIdx]].length - 1];
     } else {
-      nextItem = state[cate[upIdx]][curOrder - 1];
+      nextItem = state[cate[cateIdx]][curOrder - 1];
     }
   } else if (option === "next") {
-    if (curOrder >= state[cate[upIdx]].length - 1) {
-      if (upIdx >= 1) upIdx = 0;
-      else upIdx++;
-      nextItem = state[cate[upIdx]][0];
+    if (curOrder >= state[cate[cateIdx]].length - 1) {
+      if (cateIdx >= 1) cateIdx = 0;
+      else cateIdx++;
+      nextItem = state[cate[cateIdx]][0];
     } else {
-      nextItem = state[cate[upIdx]][curOrder + 1];
+      nextItem = state[cate[cateIdx]][curOrder + 1];
     }
   }
 
-  return nextItem;
+  return {
+    curItem: nextItem,
+    curCateName: cateNames[cateIdx]
+  };
 };

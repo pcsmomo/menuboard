@@ -27,10 +27,11 @@ export const fetchSides = () => async dispatch => {
   });
 };
 
-export const openSlider = curItem => {
+export const openSlider = (curItem, cateIdx) => {
   return {
     type: OPEN_SLIDER,
-    curItem
+    curItem,
+    cateIdx
   };
 };
 
