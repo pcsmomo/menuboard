@@ -164,5 +164,5 @@
     "price": 14,
     "add": [{ "name": "+ Tater tots", "price": 5 }]
   },
-  { "id": "0018", "order": 19, "name": "Soup du jour", "price": 11 }
+  { "id": "0018", "order": 18, "name": "Soup du jour", "price": 11 }
 ]
