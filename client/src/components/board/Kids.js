@@ -10,7 +10,11 @@ class Kids extends Component {
   renderMenu() {
     return Array.prototype.map.call(this.props.kids, dish => {
       return (
-        <div className="dish" key={dish.name}>
+        <div
+          className="dish"
+          key={dish.id}
+          onClick={() => this.props.openSlider(dish, 1)}
+        >
           <div className="divName">
             <span className="dishName">{dish.name}</span>
             {dish.desc ? " - " : ""}{" "}

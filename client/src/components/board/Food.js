@@ -13,7 +13,7 @@ class Food extends Component {
       <div>
         <div className="main">
           <Dishes openSlider={this.props.openSlider} />
-          <Kids />
+          <Kids openSlider={this.props.openSlider} />
         </div>
         <Sides />
       </div>
