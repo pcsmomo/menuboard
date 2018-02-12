@@ -49,7 +49,7 @@ class Specials extends Component {
   render() {
     return (
       <div className="specials">
-        <div className="specialTitle">SPECIAL</div>
+        <div className="specialTitle">SPECIALS</div>
         {this.renderMenu()}
       </div>
     );

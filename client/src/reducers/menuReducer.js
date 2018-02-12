@@ -8,7 +8,7 @@ import { FETCH_DISHINFO } from "../actions/types";
 import { OPEN_SLIDER, CLOSE_SLIDER } from "../actions/types";
 
 // If I don't give initialState, there would be an error on Dishes.js
-const cateNames = ["Breakfast & Lunch", "Kids", "Sides"];
+const cateNames = ["Specials", "Breakfast & Lunch", "Kids", "Sides"];
 const cate = ["specials", "dishes", "kids", "sides"];
 const initialState = {
   specials: {},
@@ -71,7 +71,7 @@ const findPrevNextItem = (state, curId, option) => {
   let curItem = null;
   let cateIdx = 0; // index for categories(dishes, kids, sides)
 
-  for (cateIdx = 0; cateIdx <= 2; cateIdx++) {
+  for (cateIdx = 0; cateIdx <= 3; cateIdx++) {
     curItem = state[cate[cateIdx]].find(element => {
       return element.id == curId;
     });
@@ -83,7 +83,8 @@ const findPrevNextItem = (state, curId, option) => {
   let curOrder = curItem.order;
   if (option === "prev") {
     if (curOrder <= 0) {
-      if (cateIdx <= 0) cateIdx = 1;
+      if (cateIdx <= 0)
+        cateIdx = 2; // between 0 and 2
       else cateIdx--;
       nextItem = state[cate[cateIdx]][state[cate[cateIdx]].length - 1];
     } else {
@@ -91,7 +92,8 @@ const findPrevNextItem = (state, curId, option) => {
     }
   } else if (option === "next") {
     if (curOrder >= state[cate[cateIdx]].length - 1) {
-      if (cateIdx >= 1) cateIdx = 0;
+      if (cateIdx >= 2)
+        cateIdx = 0; // between 0 and 2
       else cateIdx++;
       nextItem = state[cate[cateIdx]][0];
     } else {

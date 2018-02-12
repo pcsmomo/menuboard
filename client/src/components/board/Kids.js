@@ -13,7 +13,7 @@ class Kids extends Component {
         <div
           className="dish"
           key={dish.id}
-          onClick={() => this.props.openSlider(dish, 1)}
+          onClick={() => this.props.openSlider(dish, 2)}
         >
           <div className="divName">
             <span className="dishName">{dish.name}</span>
