@@ -27,6 +27,10 @@ class Slider extends Component {
         <div className="slider">
           <h2>{this.props.curCateName}</h2>
           <div className="areaImg">
+            <div
+              className="btnClose"
+              onClick={() => this.props.closeSlider()}
+            />
             <img
               className="mainImg"
               src={"images/" + this.props.curItem.id + ".jpg"}
@@ -59,9 +63,6 @@ class Slider extends Component {
               ? this.renderAdd(this.props.curItem.add)
               : ""}
           </div>
-          <button className="btnClose" onClick={() => this.props.closeSlider()}>
-            close
-          </button>
         </div>
       </div>
     );
