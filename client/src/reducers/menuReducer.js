@@ -1,11 +1,17 @@
-import { FETCH_DISHES, FETCH_KIDS, FETCH_SIDES } from "../actions/types";
+import {
+  FETCH_SPECIALS,
+  FETCH_DISHES,
+  FETCH_KIDS,
+  FETCH_SIDES
+} from "../actions/types";
 import { FETCH_DISHINFO } from "../actions/types";
 import { OPEN_SLIDER, CLOSE_SLIDER } from "../actions/types";
 
 // If I don't give initialState, there would be an error on Dishes.js
 const cateNames = ["Breakfast & Lunch", "Kids", "Sides"];
-const cate = ["dishes", "kids", "sides"];
+const cate = ["specials", "dishes", "kids", "sides"];
 const initialState = {
+  specials: {},
   dishes: {},
   kids: {},
   sides: {},
@@ -30,6 +36,11 @@ export default function menu(state = initialState, action) {
       return {
         ...state,
         sides: action.payload
+      };
+    case FETCH_SPECIALS:
+      return {
+        ...state,
+        specials: action.payload
       };
     case FETCH_DISHINFO:
       let result = findPrevNextItem(state, action.dishId, action.option);

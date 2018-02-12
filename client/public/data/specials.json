@@ -1,0 +1,22 @@
+[
+  {
+    "id": "0027",
+    "order": 0,
+    "name": "First Special",
+    "desc":
+      "Zesty whipped ricotta on flaky roti paratha with roasted figs, basil, pistachio praline & a honey glaze",
+    "price": 17
+  },
+  {
+    "id": "0028",
+    "order": 1,
+    "name": "Second Special",
+    "desc":
+      "Carrot fettuccine, charred corn, pine nuts & coriander with a chipotle vinaigrette & labne",
+    "add": [
+      { "name": "+ 2 poached eggs", "price": 4 },
+      { "name": "+ grilled chicken", "price": 5 }
+    ],
+    "price": 17
+  }
+]

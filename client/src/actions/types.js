@@ -1,3 +1,4 @@
+export const FETCH_SPECIALS = "FETCH_SPECIALS";
 export const FETCH_DISHES = "FETCH_DISHES";
 export const FETCH_KIDS = "FETCH_KIDS";
 export const FETCH_SIDES = "FETCH_SIDES";

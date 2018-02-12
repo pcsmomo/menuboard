@@ -97,3 +97,17 @@ header {
 .divSides > div:nth-child(odd) {
   background: #ddd;
 }
+
+.specials {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background-color: pink;
+  padding: 20px;
+}
+.specialTitle {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.4em;
+  font-weight: bold;
+}
