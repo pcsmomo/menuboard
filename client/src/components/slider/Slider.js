@@ -26,8 +26,9 @@ class Slider extends Component {
       <div className="sliderArea" style={this.props.toggle ? display : hide}>
         <div className="slider">
           <h2>{this.props.curCateName}</h2>
-          <div className="sliderImg">
+          <div className="areaImg">
             <img
+              className="mainImg"
               src={"images/" + this.props.curItem.id + ".jpg"}
               alt={this.props.curItem.name}
             />

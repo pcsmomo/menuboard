@@ -11,9 +11,13 @@
 .slider {
   margin: 0 5%;
 }
-.sliderImg {
+.areaImg {
   text-align: center;
   z-index: -1;
+}
+.mainImg {
+  height: 450px;
+  border-radius: 50px;
 }
 .prev,
 .next {
