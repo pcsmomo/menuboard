@@ -11,6 +11,16 @@ const hide = {
 };
 
 class Slider extends Component {
+  renderAdd(addArr) {
+    return addArr.map(add => {
+      return (
+        <p key={add.name}>
+          {add.name} / {add.price}
+        </p>
+      );
+    });
+  }
+
   render() {
     return (
       <div className="sliderArea" style={this.props.toggle ? display : hide}>
@@ -44,6 +54,9 @@ class Slider extends Component {
               {this.props.curItem.desc} <span>{this.props.curItem.type}</span>
             </p>
             <p>{this.props.curItem.price}</p>
+            {this.props.curItem.add
+              ? this.renderAdd(this.props.curItem.add)
+              : ""}
           </div>
           <button className="btnClose" onClick={() => this.props.closeSlider()}>
             close
