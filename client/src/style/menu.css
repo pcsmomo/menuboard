@@ -56,10 +56,13 @@ header {
 .divAdd {
   clear: both;
 }
+.pargEgg {
+  font-weight: bold;
+}
 
 .divTriangle {
   display: block;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .triangle {
   float: left;

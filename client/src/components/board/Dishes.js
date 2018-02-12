@@ -47,7 +47,15 @@ class Dishes extends Component {
   }
 
   render() {
-    return <div className="dishes">{this.renderMenu()}</div>;
+    return (
+      <div className="dishes">
+        {this.renderMenu()}
+        <p className="pargEgg">
+          *Eggs by Burd Eggs: Eggs laid by 100% free range hens, roaming free in
+          the country air, 365 days a year!
+        </p>
+      </div>
+    );
   }
 }
 

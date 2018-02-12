@@ -37,10 +37,6 @@ class Kids extends Component {
           <div className="triangle" />
           <div className="triangle pink" />
           <div className="triangle" />
-          <div className="triangle newLine" />
-          <div className="triangle pink" />
-          <div className="triangle" />
-          <div className="triangle pink" />
         </div>
         <div className="thirdTitle">Kids</div>
         <div className="dishes">{this.renderMenu()}</div>

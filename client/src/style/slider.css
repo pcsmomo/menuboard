@@ -82,6 +82,7 @@
   vertical-align: middle;
   border: 5px solid grey;
   border-radius: 100%;
+  cursor: pointer;
 }
 .btnClose::before,
 .btnClose::after {
