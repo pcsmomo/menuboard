@@ -35,6 +35,7 @@ header {
   padding: 14px 5px;
   clear: both;
   line-height: 1.3em;
+  cursor: pointer;
 }
 .divName {
   width: 90%;
@@ -101,13 +102,28 @@ header {
 .specials {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 5%;
   background-color: pink;
   padding: 20px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 }
 .specialTitle {
   text-align: center;
   text-decoration: underline;
   font-size: 1.4em;
   font-weight: bold;
+  animation-name: animSpecial;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes animSpecial {
+  0% {
+    color: black;
+  }
+  100% {
+    color: #ff3333;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+    transform: scale(1.2);
+  }
 }
