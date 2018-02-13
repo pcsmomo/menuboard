@@ -130,3 +130,14 @@ header {
     transform: scale(1.2);
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .main {
+    column-count: 1;
+  }
+  .specials {
+    position: inherit;
+    background-color: pink;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+}
