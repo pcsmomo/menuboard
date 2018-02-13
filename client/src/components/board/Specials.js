@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import Draggable from "react-draggable";
 import { fetchSpecials } from "../../actions";
 
 class Specials extends Component {
@@ -48,10 +49,15 @@ class Specials extends Component {
 
   render() {
     return (
-      <div className="specials">
-        <div className="specialTitle">SPECIALS</div>
-        {this.renderMenu()}
-      </div>
+      <Draggable handle=".spcTitleArea">
+        <div className="specials">
+          <div className="spcTitleArea">
+            <span className="specialTitle">SPECIALS</span>
+            <span className="dragdrop" />
+          </div>
+          {this.renderMenu()}
+        </div>
+      </Draggable>
     );
   }
 }

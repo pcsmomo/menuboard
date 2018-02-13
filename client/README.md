@@ -1,6 +1,7 @@
 cd /Users/momo/Documents/Study/reactjs/prj/menu/client
 
 npm install --save redux react-redux react-router-dom
+npm install --save react-draggable
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 

@@ -120,10 +120,6 @@
   .mainImg {
     width: 90%;
     height: 45vh;
-    border-radius: 50px;
-    background-image: url("/images/no-image-available.png");
-    background-repeat: no-repeat;
-    background-position: center;
   }
   .prev,
   .next {

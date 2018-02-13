@@ -104,15 +104,19 @@ header {
 
 .specials {
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: 5%;
   background-color: pink;
   padding: 20px;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 }
-.specialTitle {
+.spcTitleArea {
+  cursor: pointer;
   text-align: center;
+}
+.specialTitle {
   text-decoration: underline;
+  line-height: 35px;
   font-size: 1.4em;
   font-weight: bold;
   animation-name: animSpecial;
@@ -120,14 +124,25 @@ header {
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
 }
+.dragdrop {
+  display: inline-block;
+  background: url("/images/drag-drop.png") no-repeat;
+  background-size: contain;
+  position: fixed;
+  top: 14px;
+  right: 15%;
+  width: 30px;
+  height: 30px;
+}
 @keyframes animSpecial {
   0% {
     color: black;
+    font-size: 1.4em;
   }
   100% {
     color: #ff3333;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
-    transform: scale(1.2);
+    font-size: 1.6em;
   }
 }
 
@@ -139,5 +154,8 @@ header {
     position: inherit;
     background-color: pink;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  .dragdrop {
+    display: none;
   }
 }
