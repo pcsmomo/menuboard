@@ -150,6 +150,9 @@ header {
   .main {
     column-count: 1;
   }
+  .divSides {
+    column-count: 1;
+  }
   .specials {
     position: inherit;
     background-color: pink;
