@@ -6,7 +6,6 @@ import Specials from "./Specials";
 import Dishes from "./Dishes";
 import Kids from "./Kids";
 import Sides from "./Sides";
-import Slider from "../slider/Slider";
 
 class Food extends Component {
   renderFood() {

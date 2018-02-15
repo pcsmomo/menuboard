@@ -73,7 +73,7 @@ const findPrevNextItem = (state, curId, option) => {
 
   for (cateIdx = 0; cateIdx <= 3; cateIdx++) {
     curItem = state[cate[cateIdx]].find(element => {
-      return element.id == curId;
+      return element.id === curId;
     });
     if (curItem) break;
   }
