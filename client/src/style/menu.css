@@ -86,12 +86,9 @@ header {
 .thirdTitle {
   font-size: 1.5em;
   font-weight: bold;
-  padding-top: 15px;
+  padding-top: 30px;
   padding-left: 4px;
   clear: both;
-}
-.drinks .thirdTitle {
-  margin-top: 30px;
 }
 .divSides {
   column-count: 2;
