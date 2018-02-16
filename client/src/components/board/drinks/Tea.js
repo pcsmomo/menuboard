@@ -1,8 +1,27 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { fetchTea } from "../../../actions";
 
 class Tea extends Component {
+  componentDidMount() {
+    this.props.fetchTea();
+  }
+
   renderMenu() {
-    return <div>Tea</div>;
+    return Array.prototype.map.call(this.props.tea, elm => {
+      return (
+        <div className="dish" key={elm.id}>
+          <div className="divName">
+            <span className="dishName">{elm.name}</span>
+            {elm.desc ? " - " : ""} <span className="dishDesc">{elm.desc}</span>
+            <span className="dishType"> {elm.type}</span>
+          </div>
+          <div className="divPrice">
+            <span className="dishPrice">{elm.price}</span>
+          </div>
+        </div>
+      );
+    });
   }
 
   render() {
@@ -15,4 +34,18 @@ class Tea extends Component {
   }
 }
 
-export default Tea;
+const mapStateToProps = state => {
+  return {
+    tea: state.drinks.tea
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchTea: () => {
+      dispatch(fetchTea());
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Tea);

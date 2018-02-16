@@ -1,0 +1,9 @@
+[
+  { "id": "1401", "order": 0, "name": "English Breakfast", "price": 4 },
+  { "id": "1402", "order": 1, "name": "Earl Grey", "price": 4 },
+  { "id": "1403", "order": 2, "name": "Peppermint", "price": 4 },
+  { "id": "1404", "order": 3, "name": "Lemongrass and Ginger", "price": 4 },
+  { "id": "1405", "order": 4, "name": "China Sencha", "price": 4 },
+  { "id": "1406", "order": 5, "name": "Jasmine Pearls", "price": 4 },
+  { "id": "1407", "order": 6, "name": "Black Chai Tea", "price": 4 }
+]

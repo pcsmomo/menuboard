@@ -1,0 +1,33 @@
+[
+  {
+    "id": "1501",
+    "order": 0,
+    "name": "Bottomless Sparkling Water",
+    "price": 5
+  },
+  { "id": "1502", "order": 1, "name": "Coconut Water", "price": 5 },
+  {
+    "id": "1503",
+    "order": 2,
+    "name": "Remedy Kombucha (assorted flavours)",
+    "price": 5.5
+  },
+  {
+    "id": "1504",
+    "order": 3,
+    "name": "Kreol Apple Cider Vinegar (assorted flavours)",
+    "price": 5.5
+  },
+  {
+    "id": "1505",
+    "order": 4,
+    "name": "Healthy Human Juice (assorted flavours)",
+    "price": 5.5
+  },
+  {
+    "id": "1506",
+    "order": 5,
+    "name": "Strange Love Soft Drink (assorted flavours)",
+    "price": 4.5
+  }
+]

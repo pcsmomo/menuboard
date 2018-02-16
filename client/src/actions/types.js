@@ -8,3 +8,6 @@ export const CLOSE_SLIDER = "CLOSE_SLIDER";
 
 export const FETCH_COFFEE = "FETCH_COFFEE";
 export const FETCH_COLD = "FETCH_COLD";
+export const FETCH_SMOOTHIE = "FETCH_SMOOTHIE";
+export const FETCH_TEA = "FETCH_TEA";
+export const FETCH_FRIDGE = "FETCH_FRIDGE";
