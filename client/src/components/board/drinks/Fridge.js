@@ -27,7 +27,7 @@ class Fridge extends Component {
   render() {
     return (
       <div>
-        <div className="thirdTitle">Fridge</div>
+        <div className="thirdTitle">From the Fridge</div>
         <div className="subDrinks">{this.renderMenu()}</div>
       </div>
     );
