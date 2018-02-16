@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Coffee from "./Coffee";
 import Cold from "./Cold";
-import Juice from "./Juice";
+import Smoothie from "./Smoothie";
 import Tea from "./Tea";
 import Fridge from "./Fridge";
 
@@ -12,7 +12,7 @@ class Drinks extends Component {
       <div>
         <Coffee />
         <Cold />
-        <Juice />
+        <Smoothie />
         <Tea />
         <Fridge />
       </div>

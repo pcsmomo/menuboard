@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 
-class Juice extends Component {
+class Smoothie extends Component {
   renderMenu() {
-    return <div>Juice</div>;
+    return <div>Smoothie</div>;
   }
 
   render() {
     return (
       <div>
-        <div className="thirdTitle">Juice</div>
+        <div className="thirdTitle">Smoothie</div>
         <div className="dishes">{this.renderMenu()}</div>
       </div>
     );
   }
 }
 
-export default Juice;
+export default Smoothie;
