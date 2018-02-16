@@ -11,7 +11,7 @@ class Kids extends Component {
     return Array.prototype.map.call(this.props.kids, dish => {
       return (
         <div
-          className="dish"
+          className="item"
           key={dish.id}
           onClick={() => this.props.openSlider(dish, 2)}
         >

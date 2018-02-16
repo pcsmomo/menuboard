@@ -24,10 +24,11 @@ header {
   height: 80px;
 }
 
-.main {
+.main,
+.drinks {
   column-count: 2;
 }
-.dish {
+.item {
   display: block;
   /*grid-column-gap: 1em;*/
   /*align-items: end;*/
@@ -43,6 +44,9 @@ header {
 }
 .dishName {
   font-weight: bold;
+}
+.subDrinks .dishName {
+  font-weight: normal;
 }
 .dishType {
   font-size: 0.8em;
@@ -86,7 +90,9 @@ header {
   padding-left: 4px;
   clear: both;
 }
-
+.drinks .thirdTitle {
+  margin-top: 30px;
+}
 .divSides {
   column-count: 2;
 }
@@ -160,7 +166,8 @@ header {
 
 /* Media query for mobile */
 @media only screen and (max-width: 500px) {
-  .main {
+  .main,
+  .drinks {
     column-count: 1;
   }
   .divSides {

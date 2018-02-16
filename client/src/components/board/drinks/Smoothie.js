@@ -10,7 +10,7 @@ class Smoothie extends Component {
   renderMenu() {
     return Array.prototype.map.call(this.props.smoothie, elm => {
       return (
-        <div className="dish" key={elm.id}>
+        <div className="item" key={elm.id}>
           <div className="divName">
             <span className="dishName">{elm.name}</span>
             {elm.desc ? " - " : ""} <span className="dishDesc">{elm.desc}</span>
@@ -28,7 +28,7 @@ class Smoothie extends Component {
     return (
       <div>
         <div className="thirdTitle">Smoothie</div>
-        <div className="dishes">{this.renderMenu()}</div>
+        <div className="subDrinks">{this.renderMenu()}</div>
       </div>
     );
   }

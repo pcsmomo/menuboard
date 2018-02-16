@@ -17,7 +17,7 @@ class Specials extends Component {
     return Array.prototype.map.call(this.props.specials, dish => {
       return (
         <div
-          className="dish"
+          className="item"
           key={dish.id}
           onClick={() => this.props.openSlider(dish, 0)}
         >
