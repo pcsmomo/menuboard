@@ -7,3 +7,4 @@ export const OPEN_SLIDER = "OPEN_SLIDER";
 export const CLOSE_SLIDER = "CLOSE_SLIDER";
 
 export const FETCH_COFFEE = "FETCH_COFFEE";
+export const FETCH_COLD = "FETCH_COLD";

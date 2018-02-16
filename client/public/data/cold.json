@@ -1,0 +1,12 @@
+[
+  { "id": "1101", "order": 0, "name": "Filter: Cold Drip", "price": 4 },
+  {
+    "id": "1102",
+    "order": 1,
+    "name": "Iced Latte / Mocha / Long Black",
+    "price": 3.9
+  },
+  { "id": "1103", "order": 2, "name": "Large", "price": 4.7 },
+  { "id": "1104", "order": 3, "name": "Iced Chocolate", "price": 5 },
+  { "id": "1105", "order": 4, "name": "Orange juice", "price": 5 }
+]
