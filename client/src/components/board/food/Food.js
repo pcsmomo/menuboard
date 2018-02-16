@@ -8,9 +8,9 @@ import Kids from "./Kids";
 import Sides from "./Sides";
 
 class Food extends Component {
-  renderFood() {
+  render() {
     return (
-      <div>
+      <div className="food">
         <div className="main">
           <Specials openSlider={this.props.openSlider} />
           <Dishes openSlider={this.props.openSlider} />
@@ -19,10 +19,6 @@ class Food extends Component {
         <Sides />
       </div>
     );
-  }
-
-  render() {
-    return <div className="food">{this.renderFood()}</div>;
   }
 }
 
