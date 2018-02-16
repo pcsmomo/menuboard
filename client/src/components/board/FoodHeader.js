@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Flip from "./Flip";
 
 class Header extends Component {
   renderHeader() {
@@ -9,6 +10,7 @@ class Header extends Component {
           <div className="subTitle">BREAKFAST & LUNCH ALL DAY</div>
         </div>
         <img className="logo" src="/images/jethro_logo.png" alt="logo" />
+        <Flip link="/drinks" />
       </header>
     );
   }

@@ -3,8 +3,10 @@ import { connect } from "react-redux";
 import { BrowserRouter, Route } from "react-router-dom";
 import "../style/menu.css";
 
-import Header from "./board/Header";
+import FoodHeader from "./board/FoodHeader";
 import Food from "./board/Food";
+import DrinksHeader from "./board/DrinksHeader";
+import Drinks from "./board/Drinks";
 import Slider from "./slider/Slider";
 
 const applyBlur = {
@@ -17,16 +19,20 @@ const cancelBlur = {
 class Menu extends Component {
   render() {
     return (
-      <div className="content">
-        <div
-          className="menu"
-          style={this.props.toggle ? applyBlur : cancelBlur}
-        >
-          <Header />
-          <Food />
+      <BrowserRouter>
+        <div className="content">
+          <div
+            className="menu"
+            style={this.props.toggle ? applyBlur : cancelBlur}
+          >
+            <Route exact path="/" component={FoodHeader} />
+            <Route exact path="/" component={Food} />
+            <Route exact path="/drinks" component={DrinksHeader} />
+            <Route exact path="/drinks" component={Drinks} />
+          </div>
+          <Slider />
         </div>
-        <Slider />
-      </div>
+      </BrowserRouter>
     );
   }
 }
