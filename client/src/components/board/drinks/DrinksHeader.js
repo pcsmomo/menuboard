@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Flip from "./Flip";
+import Flip from "../Flip";
 
 class DrinksHeader extends Component {
   renderHeader() {

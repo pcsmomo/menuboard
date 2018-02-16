@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { fetchSides } from "../../actions";
+import { fetchSides } from "../../../actions";
 
 class Sides extends Component {
   componentDidMount() {

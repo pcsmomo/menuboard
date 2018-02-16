@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { fetchDishes } from "../../actions";
+import Draggable from "react-draggable";
+import { fetchSpecials } from "../../../actions";
 
-class Dishes extends Component {
+class Specials extends Component {
   componentDidMount() {
-    this.props.fetchDishes();
+    this.props.fetchSpecials();
   }
 
   renderMenu() {
@@ -13,12 +14,12 @@ class Dishes extends Component {
     // });
 
     // this.props.brekkie.map is not a function so, used a detour.
-    return Array.prototype.map.call(this.props.dishes, dish => {
+    return Array.prototype.map.call(this.props.specials, dish => {
       return (
         <div
           className="dish"
           key={dish.id}
-          onClick={() => this.props.openSlider(dish, 1)}
+          onClick={() => this.props.openSlider(dish, 0)}
         >
           <div className="divName">
             <span className="dishName">{dish.name}</span>
@@ -48,42 +49,31 @@ class Dishes extends Component {
 
   render() {
     return (
-      <div className="dishes">
-        {this.renderMenu()}
-        <p className="pargEgg">
-          *Eggs by Burd Eggs: Eggs laid by 100% free range hens, roaming free in
-          the country air, 365 days a year!
-        </p>
-      </div>
+      <Draggable handle=".spcTitleArea">
+        <div className="specials">
+          <div className="spcTitleArea">
+            <span className="specialTitle">SPECIALS</span>
+            <span className="dragdrop" />
+          </div>
+          {this.renderMenu()}
+        </div>
+      </Draggable>
     );
   }
 }
 
-// const mapStateToProps = ({ dishes }) => {
-//   return { dishes };
-// }
 const mapStateToProps = state => {
   return {
-    dishes: state.menu.dishes
+    specials: state.menu.specials
   };
 };
 
-// const mapDispatchToProps = dispatch => {
-//   return {
-//     fetchDishes: () => {
-//       dispatch(fetchDishes());
-//     },
-//     openSlider: selectedItem => {
-//       dispatch(openSlider(selectedItem));
-//     }
-//   };
-// };
 const mapDispatchToProps = dispatch => {
   return {
-    fetchDishes: () => {
-      dispatch(fetchDishes());
+    fetchSpecials: () => {
+      dispatch(fetchSpecials());
     }
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Dishes);
+export default connect(mapStateToProps, mapDispatchToProps)(Specials);

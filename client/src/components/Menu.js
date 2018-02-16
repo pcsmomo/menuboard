@@ -3,10 +3,10 @@ import { connect } from "react-redux";
 import { BrowserRouter, Route } from "react-router-dom";
 import "../style/menu.css";
 
-import FoodHeader from "./board/FoodHeader";
-import Food from "./board/Food";
-import DrinksHeader from "./board/DrinksHeader";
-import Drinks from "./board/Drinks";
+import FoodHeader from "./board/food/FoodHeader";
+import Food from "./board/food/Food";
+import DrinksHeader from "./board/drinks/DrinksHeader";
+import Drinks from "./board/drinks/Drinks";
 import Slider from "./slider/Slider";
 
 const applyBlur = {

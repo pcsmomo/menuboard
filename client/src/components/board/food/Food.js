@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { openSlider } from "../../actions";
+import { openSlider } from "../../../actions";
 
 import Specials from "./Specials";
 import Dishes from "./Dishes";
