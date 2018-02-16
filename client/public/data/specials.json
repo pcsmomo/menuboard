@@ -1,22 +1,22 @@
 [
   {
-    "id": "0027",
+    "id": "0029",
     "order": 0,
     "name": "First Special",
     "desc":
-      "Zesty whipped ricotta on flaky roti paratha with roasted figs, basil, pistachio praline & a honey glaze",
-    "price": 17
+      "Crumbed cauliflower steak with zesty cured salmon, Asian salad & two poached eggs",
+    "price": 21
   },
   {
-    "id": "0028",
+    "id": "0030",
     "order": 1,
     "name": "Second Special",
     "desc":
-      "Carrot fettuccine, charred corn, pine nuts & coriander with a chipotle vinaigrette & labne",
+      "Chilled soba noodle salad on smoked miso eggplant relish with asparagus, cucumber, pickled radish, spring onion & sesame seeds",
     "add": [
-      { "name": "+ 2 poached eggs", "price": 4 },
-      { "name": "+ grilled chicken", "price": 5 }
+      { "name": "Add grilled chicken", "price": 5 },
+      { "name": "Add smoked trout", "price": 6 }
     ],
-    "price": 17
+    "price": 18
   }
 ]
