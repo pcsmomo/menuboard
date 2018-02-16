@@ -1,0 +1,21 @@
+[
+  { "id": "1001", "order": 0, "name": "Filter: Batch Brew", "price": 4 },
+  { "id": "1002", "order": 1, "name": "Espresso / with Milk", "price": 3.9 },
+  { "id": "1003", "order": 2, "name": "Large", "price": 4.7 },
+  { "id": "1004", "order": 3, "name": "+ Soy - Bonsoy", "price": 0.5 },
+  {
+    "id": "1005",
+    "order": 4,
+    "name": "+ Almond milk - by Almond Milk Co.",
+    "price": 1
+  },
+  { "id": "1006", "order": 5, "name": "Hot Chocolate (GF)", "price": 3.9 },
+  {
+    "id": "1007",
+    "order": 6,
+    "name": "Chai Latte - by Prana Chai",
+    "price": 5
+  },
+  { "id": "1008", "order": 7, "name": "Dirty Chai", "price": 6 },
+  { "id": "1009", "order": 8, "name": "Babyccino", "price": 2 }
+]

@@ -2,6 +2,7 @@ import axios from "axios";
 import { FETCH_DISHES, FETCH_KIDS, FETCH_SIDES, FETCH_SPECIALS } from "./types";
 import { OPEN_SLIDER, CLOSE_SLIDER } from "./types";
 import { FETCH_DISHINFO } from "./types";
+import { FETCH_COFFEE } from "./types";
 
 export const fetchSpecials = () => async dispatch => {
   const res = await axios.get("/data/specials.json");
@@ -55,4 +56,12 @@ export const fetchDishInfo = (dishId, option) => {
     dishId,
     option
   };
+};
+
+export const fetchCoffee = () => async dispatch => {
+  const res = await axios.get("/data/coffee.json");
+  dispatch({
+    type: FETCH_COFFEE,
+    payload: res.data
+  });
 };
