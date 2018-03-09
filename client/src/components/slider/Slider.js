@@ -15,7 +15,7 @@ class Slider extends Component {
     return addArr.map(add => {
       return (
         <p key={add.name}>
-          {add.name} / {add.price}
+          {add.name} / ${add.price}
         </p>
       );
     });
@@ -59,7 +59,7 @@ class Slider extends Component {
               <p>
                 {this.props.curItem.desc} <span>{this.props.curItem.type}</span>
               </p>
-              <p>{this.props.curItem.price}</p>
+              <p>${this.props.curItem.price}</p>
               {this.props.curItem.add
                 ? this.renderAdd(this.props.curItem.add)
                 : ""}
