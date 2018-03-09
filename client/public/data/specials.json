@@ -1,22 +1,18 @@
 [
   {
-    "id": "0029",
+    "id": "0037",
     "order": 0,
     "name": "First Special",
     "desc":
-      "Crumbed cauliflower steak with zesty cured salmon, Asian salad & two poached eggs",
-    "price": 21
+      "Fluffy cornbread with confit tomatoes, pea tendrils, punchy beetroot relish & avocado with two poached eggs and a chevre cheese crumb",
+    "price": 20
   },
   {
-    "id": "0030",
+    "id": "0038",
     "order": 1,
     "name": "Second Special",
     "desc":
-      "Chilled soba noodle salad on smoked miso eggplant relish with asparagus, cucumber, pickled radish, spring onion & sesame seeds",
-    "add": [
-      { "name": "Add grilled chicken", "price": 5 },
-      { "name": "Add smoked trout", "price": 6 }
-    ],
-    "price": 18
+      "Panfried Snapper with Sicilian Caponata, roast potato & an olive crumb with a mediterranean dressing",
+    "price": 23
   }
 ]
