@@ -24,14 +24,11 @@ class Slider extends Component {
   render() {
     return (
       <div className="sliderArea" style={this.props.toggle ? display : hide}>
+        <div className="btnClose" onClick={() => this.props.closeSlider()} />
         <div className="slider">
           <h2>{this.props.curCateName}</h2>
           <div className="sliderDisplay">
             <div className="areaImg">
-              <div
-                className="btnClose"
-                onClick={() => this.props.closeSlider()}
-              />
               <img
                 className="mainImg"
                 src={"images/" + this.props.curItem.id + ".jpg"}
