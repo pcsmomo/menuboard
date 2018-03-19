@@ -1,18 +1,18 @@
 [
   {
-    "id": "0037",
+    "id": "0039",
     "order": 0,
     "name": "First Special",
     "desc":
-      "Fluffy cornbread with confit tomatoes, pea tendrils, punchy beetroot relish & avocado with two poached eggs and a chevre cheese crumb",
+      "Asian greens stir fry with pulled duck, fried shallots & two poached eggs with a miso hollandaise",
     "price": 20
   },
   {
-    "id": "0038",
+    "id": "0040",
     "order": 1,
     "name": "Second Special",
     "desc":
-      "Panfried Snapper with Sicilian Caponata, roast potato & an olive crumb with a mediterranean dressing",
-    "price": 23
+      "Pumpkin croquette with stracciatella cream, a rocket, cucumber & Spanish onion salad with a red wine vinaigrette",
+    "price": 20
   }
 ]
