@@ -1,20 +1,19 @@
-cd /Users/momo/Documents/Study/reactjs/prj/menu
+# Menu Board
 
-npm init
-Enter Enter Enter Enter ...
+This is an interactive menu board application which displays current menus at the cafe on the responsive web layout.
 
-npm install --save express
 
-heroku -v
-heroku login (pcsmomo@gmail.com)
-heroku apps:create jethromenu
-git remote add heroku https://git.heroku.com/jethromenu.git
--> fatal: remote heroku already exists.
-git push heroku master
+# What skills have been used
 
-npm install --save nodemon
+- javascript
+-- Node.js
+-- Reactjs
+- css
+-- responsive web design
+- git
+- Heroku
 
-npm install -g create-react-app
-create-react-app client
 
-npm install --save concurrently
+# Link
+
+https://jethromenu.herokuapp.com/
